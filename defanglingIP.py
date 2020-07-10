@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/python3
 
 # https://leetcode.com/problems/defanging-an-ip-address/submissions/
 
