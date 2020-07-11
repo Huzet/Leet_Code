@@ -29,7 +29,9 @@ class Solution:
                 convertedValue = convertedValue + romanInt[s[placeH]]
                 placeH = placeH + 1
         return convertedValue
- 
+
+
+"""Results below""" 
 # Success
 # Details
 # Runtime: 88 ms, faster than 6.27% of Python3 online submissions for Roman to Integer.
