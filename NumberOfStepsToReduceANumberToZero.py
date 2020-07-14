@@ -18,7 +18,5 @@ class Solution:
                 placeholder = placeholder - 1
                 print(placeholder)
 
-
-# Details
 # Runtime: 48 ms, faster than 13.01% of Python3 online submissions for Number of Steps to Reduce a Number to Zero.
 # Memory Usage: 13.9 MB, less than 34.96% of Python3 online submissions for Number of Steps to Reduce a Number to Zero.
