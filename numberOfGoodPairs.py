@@ -13,6 +13,7 @@ class Solution:
                     pass
         return count
 
+"""Results below"""
 # Success
 # Details
 # Runtime: 40 ms, faster than 66.67% of Python3 online submissions for Number of Good Pairs.
