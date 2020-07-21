@@ -7,7 +7,6 @@ class Solution:
         return address.replace('.', '[.]')
 
 
-"""Results below"""
 # Success
 # Details
 # Runtime: 40 ms, faster than 19.76% of Python3 online submissions for Defanging an IP Address.
