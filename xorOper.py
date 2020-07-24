@@ -15,5 +15,8 @@ class Solution:
             answer = answer ^ nums[x]
         return answer
 
+"""Results below"""
+# Success
+# Details
 # Runtime: 56 ms, faster than 11.23% of Python3 online submissions for XOR Operation in an Array.
 # Memory Usage: 13.9 MB, less than 100.00% of Python3 online submissions for XOR Operation in an Array.
