@@ -1,1 +1,4 @@
-print('hello you'.strip('you')) 
+import pyperclip
+
+pyperclip.copy('hello')
+print(pyperclip.paste())
