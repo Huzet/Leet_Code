@@ -11,6 +11,7 @@ class Solution:
             answerList[indices[x]] = sList[x] 
         return (''.join(answerList))
 
+"""Results below"""
 # Success
 # Details
 # Runtime: 72 ms, faster than 53.26% of Python3 online submissions for Shuffle String.

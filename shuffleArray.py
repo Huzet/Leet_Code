@@ -12,6 +12,7 @@ class Solution:
             nums.append(frontarr[x])
         return nums
 
+"""Results below"""
 # Success
 # Details
 # Runtime: 52 ms, faster than 99.18% of Python3 online submissions for Shuffle the Array.

@@ -1,4 +1,1 @@
-import pyperclip
-
-pyperclip.copy('hello')
-print(pyperclip.paste())
+print('remmember, remember, the fifth if november.'.split())
