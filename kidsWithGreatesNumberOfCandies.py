@@ -19,7 +19,7 @@ class Solution:
                 newlist.append(False)
         return newlist
 
-
+"""Results below"""
 # Success
 # Details
 # Runtime: 28 ms, faster than 98.89% of Python3 online submissions for Kids With the Greatest Number of Candies.
