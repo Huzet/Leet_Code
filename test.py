@@ -1,7 +1,7 @@
 # Python3
+
 import re
 
-
-myS = [1, 2]
-myS.reverse()
-print(myS)
+myregex = re.compile(r'\d{3}')
+result = myregex.search('415')
+print(result.group())
