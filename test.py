@@ -4,4 +4,7 @@ import re
 
 myregex = re.compile(r'\d{3}')
 result = myregex.search('415')
-print(result.group())
+if newS == newS[::-1]:
+    return True
+else:
+    return False
