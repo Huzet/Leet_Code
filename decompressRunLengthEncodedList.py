@@ -18,6 +18,7 @@ def decompressRLElist(nums):
 
 decompressRLElist(nums)
 
+"""Results below"""
 # Success
 # Details
 # Runtime: 80 ms, faster than 42.66% of Python3 online submissions for Decompress Run-Length Encoded List.
