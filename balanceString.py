@@ -23,6 +23,7 @@ def balancedStringSplit(s):
                 L = 0
     return counter
 
+"""Results below"""
 # Success
 # Details
 # Runtime: 16 ms, faster than 99.93% of Python3 online submissions for Split a String in Balanced Strings.
