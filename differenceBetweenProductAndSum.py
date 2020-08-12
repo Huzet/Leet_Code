@@ -11,6 +11,7 @@ class Solution:
             productNum = productNum * num 
         return (productNum - sum(Nlist))
 
+"""Results below"""
 # Success
 # Details
 # Runtime: 28 ms, faster than 81.38% of Python3 online submissions for Subtract the Product and Sum of Digits of an Integer.
