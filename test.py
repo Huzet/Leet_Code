@@ -1,10 +1,15 @@
 # Python3
 
-import re
+mat = [ [3,3,1,1],
+        [2,2,1,2],
+        [1,1,1,2]]
 
-myregex = re.compile(r'\d{3}')
-result = myregex.search('415')
-if newS == newS[::-1]:
-    return True
-else:
-    return False
+print(int(len(mat) + len(mat[0]) - 1))
+
+# mylist = []
+# for x in range(3):
+#     mylist.append([])
+#     for y in range(4):
+#         mylist[x].append(y)
+
+# print(mylist)
