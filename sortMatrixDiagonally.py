@@ -18,27 +18,33 @@ compare = [3,2,1,3,1,2,1,2,1,2,1,1]
 def diagonalSort(mat, compare):
     # 1. make diagonal lists
     diagonalList = []
-    for _ in range(int(len(mat) + len(mat[0]) - 1)):
-        diagonalList.append([])
+    counter = 0
+    # for _ in range(int(len(mat) + len(mat[0]) - 1)):
+    #     diagonalList.append([])
     for y in range(len(mat)):
-        for x in range(len(mat[y])):
+    
+        for x in range(len(mat[y])):       
             for diag in range(len(mat)):
                 if y == 0:
                     try:
-                        diagonalList[x].append(mat[y+diag][x+diag])
+                        diagonalList.append(mat[y+diag][x+diag])
                     except:
                         continue
                 elif y > 0 and x < 1:
                     try:
-                        diagonalList[x].append(mat[y+diag][x+diag])
+                        diagonalList.append(mat[y+diag][x+diag])
                     except:
                         continue
+            counter = counter + 1         
+    
+    
     if diagonalList == compare:
         print('we got a match')
     else:
         print('does not match')
     print("length of list is", + len(diagonalList))
     print(diagonalList)
+    print(counter)
 
     # 2. organize diagonal lists
             
