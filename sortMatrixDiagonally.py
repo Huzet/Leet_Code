@@ -71,17 +71,26 @@ def diagonalSort(mat, compare):
                         blankline.append('newline')
                         continue
                             
-    
-    
-    # if diagonalList == compare:
-    #     print('we got a match')
-    # else:
-    #     print('does not match')
-    # print("length of list is", + len(diagonalList))
     print(diagonalList)
     print(counter)
-    x = " ".join(str(blankline))
-    print(x)
+    
+    # This gives you how many numbers in diagonal
+    counter = 0
+    diagonalNumbers = []
+    for x in range(len(blankline)):
+        if blankline[x] != 'newline':
+            counter = counter + 1
+        elif counter == 0:
+            counter = 0
+        else:
+            diagonalNumbers.append(counter)
+            counter = 0
+    print(diagonalNumbers)
+    
+    # Seperates diagonals
+    for x in range(len(diagonalNumbers)):
+        print(diagonalNumbers[x])
+
 
 
     # 2. organize diagonal lists
