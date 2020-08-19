@@ -89,6 +89,7 @@ def diagonalSort(mat, compare):
     
     # Seperates diagonals
     for x in range(len(diagonalNumbers)):
+        
         print(diagonalNumbers[x])
 
 
