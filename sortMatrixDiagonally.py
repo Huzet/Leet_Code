@@ -35,12 +35,8 @@ def diagonalSort(mat, compare):
     diagonalList = []
     counter = 0
     blankline = []
-    # for _ in range(int(len(mat) + len(mat[0]) - 1)):
-    #     diagonalList.append([])
     for y in range(len(mat)):
- 
-        for x in range(len(mat[y])):    
-            
+        for x in range(len(mat[y])):                
             for diag in range(len(mat)): 
                 if y == 0:
                     try:
@@ -70,9 +66,6 @@ def diagonalSort(mat, compare):
                         counter = 0
                         blankline.append('newline')
                         continue
-                            
-    print(diagonalList)
-    print(counter)
     
     # This gives you how many numbers in diagonal
     counter = 0
@@ -85,18 +78,38 @@ def diagonalSort(mat, compare):
         else:
             diagonalNumbers.append(counter)
             counter = 0
-    print(diagonalNumbers)
-    
-    # Seperates diagonals
+
+    #2.  Seperates diagonals / organize diagonal lists
+    start = 0
+    end = 0
+    sortedDiagonalList = []
     for x in range(len(diagonalNumbers)):
-        
-        print(diagonalNumbers[x])
-
-
-
-    # 2. organize diagonal lists
+        end = end + diagonalNumbers[x]
+        sortedL= diagonalList[start:end]
+        sortedL.sort()
+        sortedDiagonalList.append(sortedL)
+        start = start + diagonalNumbers[x]
+    print(sortedDiagonalList) 
 
     # 3. convert back into list 
+    # for _ in range(int(len(mat) + len(mat[0]) - 1)):
+    #     diagonalList.append([])
+    # Output: [ [1,1,1,1],  00 01 02 03 XX    1
+    #           [1,2,2,2],  10 11 12 13 XX    21       
+    #           [1,2,3,3]]  20 21 22 23 XX    321
+    # [[1, 2, 3],   00 11 22
+    #  [1, 2, 3],   01 12 23
+    #  [1, 2],      02 13
+    #  [1],         03
+    #  [1, 2],      10 21 
+    #  [1]]         22
+    #  1 1 1 1
+    #  2 2 2 1
+    print(mat)
+    for y in range(len(mat)):
+        print("y")
+        for x in range(len(mat[y])):
+            print(x, y) 
     # 4. return value
 
 diagonalSort(mat, compare)
