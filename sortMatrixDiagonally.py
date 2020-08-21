@@ -92,8 +92,7 @@ def diagonalSort(mat, compare):
     print(sortedDiagonalList) 
 
     # 3. convert back into list 
-    # for _ in range(int(len(mat) + len(mat[0]) - 1)):
-    #     diagonalList.append([])
+   
     # Output: [ [1,1,1,1],  00 01 02 03 XX    1
     #           [1,2,2,2],  10 11 12 13 XX    21       
     #           [1,2,3,3]]  20 21 22 23 XX    321
@@ -105,11 +104,27 @@ def diagonalSort(mat, compare):
     #  [1]]         22
     #  1 1 1 1
     #  2 2 2 1
+    # squre is 4X3
     print(mat)
-    for y in range(len(mat)):
-        print("y")
-        for x in range(len(mat[y])):
-            print(x, y) 
+    newlist = []
+    Yaxis = 0
+    Xaxis = 0
+    counter = 0
+    # for _ in range(int(len(mat) + len(mat[0]) - 1)):
+    #     newlist.append([])
+    for y in range(len(sortedDiagonalList)):
+        for x in range(len(sortedDiagonalList[y])):
+            try:
+                
+
+                        
+
+
+            
+                    
+    print(newlist)
+
+
     # 4. return value
 
 diagonalSort(mat, compare)
