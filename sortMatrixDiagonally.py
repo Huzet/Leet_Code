@@ -110,8 +110,8 @@ def diagonalSort(mat, compare):
     Yaxis = 0
     Xaxis = 0
     counter = 0
-    # for _ in range(int(len(mat) + len(mat[0]) - 1)):
-    #     newlist.append([])
+    for _ in range(int(len(mat) + len(mat[0]) - 1)):
+        newlist.append([])
     for y in range(len(sortedDiagonalList)):
         for x in range(len(sortedDiagonalList[y])):
             try:
