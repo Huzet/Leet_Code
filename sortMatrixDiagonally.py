@@ -115,13 +115,6 @@ def diagonalSort(mat, compare):
     for y in range(len(sortedDiagonalList)):
         for x in range(len(sortedDiagonalList[y])):
             try:
-                
-
-                        
-
-
-            
-                    
     print(newlist)
 
 
