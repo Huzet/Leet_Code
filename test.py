@@ -1,15 +1,43 @@
-# Python3
-
 mat = [ [3,3,1,1],
         [2,2,1,2],
-        [1,1,1,2]]
+        [1,1,1,2] ]
 
-print(int(len(mat) + len(mat[0]) - 1))
+newlist = []
 
-# mylist = []
-# for x in range(3):
-#     mylist.append([])
-#     for y in range(4):
-#         mylist[x].append(y)
+organized = [1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3]
+for _ in range(int(len(mat) + len(mat[0]) - 1)):
+    newlist.append([])
 
-# print(mylist)
+counter = len(mat) + len(mat[0]) - 1 # 6
+previousCounter = 0  
+height = len(mat) - 1  # 2
+rotation = 0
+holderrotation = 0
+for x in range(len(organized)):
+    if x < counter + previousCounter - height:
+        newlist[holderrotation].append(organized[x])
+        print('1', x)
+
+    elif x < counter:        
+        holderrotation = holderrotation + 1
+        newlist[holderrotation].append(organized[x])
+        print('2', x)
+
+    elif x > counter:
+        rotation = rotation + 1
+        holderrotation = rotation
+        counter = ( len(mat) + len(mat[0]) - (rotation * 2) ) + counter
+        print(counter)
+        height = height - 1
+
+    elif x < counter + previousCounter - height:
+        newlist[holderrotation].append(organized[x])
+        print('1', x)
+
+    elif x < counter:        
+        holderrotation = holderrotation + 1
+        newlist[holderrotation].append(organized[x])
+        print('2', x)
+
+print(newlist)
+

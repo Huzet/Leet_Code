@@ -107,17 +107,30 @@ def diagonalSort(mat, compare):
     # squre is 4X3
     print(mat)
     newlist = []
-    Yaxis = 0
-    Xaxis = 0
+    pullist = []
     counter = 0
+    y = 0
     for _ in range(int(len(mat) + len(mat[0]) - 1)):
         newlist.append([])
-    for y in range(len(sortedDiagonalList)):
-        for x in range(len(sortedDiagonalList[y])):
+    
+    for x in range(len(sortedDiagonalList[y])):
+        for y in range(len(sortedDiagonalList)):
             try:
+                pullist.append(sortedDiagonalList[y][x])
+            except:
+                continue
+    print(pullist)
+    for x in range(len(pullist)):
+        if x < len(mat[0]):
+            newlist[0].append(pullist[x])
+        elif x > len(mat[0]) and x < len(mat[0]) + len(mat) -1:
+            for y in range(1,len(mat)):
+                newlist[y].append(pullist[x])
+        
+        else:
+            continue
     print(newlist)
-
+    print(len(mat))
 
     # 4. return value
-
 diagonalSort(mat, compare)
