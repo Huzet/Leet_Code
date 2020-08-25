@@ -133,4 +133,5 @@ def diagonalSort(mat, compare):
     print(len(mat))
 
     # 4. return value
+    
 diagonalSort(mat, compare)
