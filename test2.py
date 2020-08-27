@@ -9,7 +9,6 @@ newlist = []
 for _ in range(len(mat)):
     newlist.append([])
 
-
 lengthL = len(mat[0]) # 4
 heightL = ( len(mat)-1 + len(mat[0]) ) # 6
 

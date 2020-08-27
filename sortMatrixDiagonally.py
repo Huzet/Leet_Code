@@ -62,7 +62,7 @@ def diagonalSort(mat):
         sortedL.sort()
         sortedDiagonalList.append(sortedL)
         start = start + diagonalNumbers[x]
-    print(sortedDiagonalList) 
+    # print(sortedDiagonalList) 
 
     # 3. convert back into list 
     organized = []
@@ -75,7 +75,7 @@ def diagonalSort(mat):
                 organized.append(sortedDiagonalList[y][x])
             except:
                 continue
-    print(organized)
+    # print(organized)
 
     # 4. return value
     newlist = []
